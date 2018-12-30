@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  afraid-autologin:
+    image: reverie89/afraid-autologin
+    container_name: afraid-autologin
+    restart: "no"
+    volumes:
+      - "/etc/localtime:/etc/localtime:ro"
+      - "/opt/docker/afraid-autologin:/config"
+
